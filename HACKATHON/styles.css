@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+    position: relative;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+input {
+    margin-top: 10px;
+    padding: 10px;
+    width: calc(100% - 22px);
+    box-sizing: border-box;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+.income-row {
+    background-color: #d4edda; /* Green for income rows */
+}
+
+.expenditure-row {
+    background-color: #f8d7da; /* Red for expenditure rows */
+}
+
+.filter {
+    margin: 30px 0;
+    margin-top: 40px;
+}
+
+#totalAmount {
+    color: white;
+}
+
+#totalAmount.below-thousand {
+    background-color: red;
+}
+
+#totalAmount.equal-thousand {
+    background-color: rgb(236, 146, 56);
+}
+
+#totalAmount.above-thousand {
+    background-color: green;
+}
+
+.status-message {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+.prizes {
+    margin-top: 20px;
+}
+
+.cup {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    display: inline-block;
+    opacity: 0;
+}
+
+.cup.active {
+    opacity: 1;
+}

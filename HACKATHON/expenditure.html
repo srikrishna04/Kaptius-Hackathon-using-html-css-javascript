@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expenditure</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Expenditure</h1>
+        <div>
+            <label for="expenditureAmount">Expenditure Amount:</label>
+            <input type="number" id="expenditureAmount">
+        </div>
+        <div>
+            <label for="expenditureDescription">Description:</label>
+            <input type="text" id="expenditureDescription">
+        </div>
+        <button onclick="submitExpenditure()">Submit</button>
+        <button onclick="navigateTo('index.html')">Back</button>
+        
+        <div class="filter">
+            <label for="expenditureStartTime">Start Time:</label>
+            <input type="time" id="expenditureStartTime">
+            <label for="expenditureEndTime">End Time:</label>
+            <input type="time" id="expenditureEndTime">
+            <button onclick="filterExpenditure()">Filter</button>
+        </div>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Date/Time</th>
+                    <th>Description</th>
+                    <th>Expenditure</th>
+                </tr>
+            </thead>
+            <tbody id="expenditureTableBody">
+            </tbody>
+        </table>
+    </div>
+
+    <script src="./scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Budget Tracker</h1>
+        <div>
+            <button id="totalAmountBtn">Total Amount:</button>
+            <input type="text" id="totalAmount" readonly>
+        </div>
+        <div class="status-message" id="statusMessage">
+            <!-- Status message will be injected here -->
+        </div>
+        <div class="prizes">
+            <img src="./images/bronz.jpeg" alt="Bronze Cup" id="bronzeCup" class="cup">
+            <img src="./images/silver.jpeg" alt="Silver Cup" id="silverCup" class="cup">
+            <img src="./images/gold.png" alt="Gold Cup" id="goldCup" class="cup">
+        </div>
+        <div class="buttons">
+            <button onclick="navigateTo('income.html')">Income</button>
+            <button onclick="navigateTo('expenditure.html')">Expenditure</button>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Income</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Income</h1>
+        <div>
+            <label for="incomeAmount">Income Amount:</label>
+            <input type="number" id="incomeAmount">
+        </div>
+        <div>
+            <label for="incomeDescription">Description:</label>
+            <input type="text" id="incomeDescription">
+        </div>
+        <button onclick="submitIncome()">Submit</button>
+        <button onclick="navigateTo('index.html')">Back</button>
+        
+        <div class="filter">
+            <label for="incomeStartTime">Start Time:</label>
+            <input type="time" id="incomeStartTime">
+            <label for="incomeEndTime">End Time:</label>
+            <input type="time" id="incomeEndTime">
+            <button onclick="filterIncome()">Filter</button>
+        </div>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Date/Time</th>
+                    <th>Description</th>
+                    <th>Income</th>
+                </tr>
+            </thead>
+            <tbody id="incomeTableBody">
+            </tbody>
+        </table>
+    </div>
+
+    <script src="./scripts.js"></script>
+</body>
+</html>
